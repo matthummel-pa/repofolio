@@ -1,0 +1,44 @@
+name: "🐞 Bug report"
+description: Report a problem with Repofolio
+labels: ["bug", "needs-info"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for reporting! Please do **not** report security issues here — email security@matthummel.com."
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+      placeholder: The repo grid shows no cards even though I'm connected...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to '...'
+        2. Add the Repofolio Repo Grid block
+        3. See error
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: WordPress / PHP / Repofolio versions
+      placeholder: "WP 6.8 / PHP 8.2 / Repofolio 1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: theme
+    attributes:
+      label: Active theme
+      placeholder: "Does it also happen on a default theme?"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant debug.log lines
+      description: See docs/ERROR-LOG.md for how to enable WP_DEBUG_LOG.
+      render: shell

@@ -1,0 +1,28 @@
+name: "✨ Feature request"
+description: Suggest an idea for Repofolio
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      placeholder: "I want to show contributor avatars on each repo card because..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      placeholder: "Add a toggle in Settings → Repofolio that..."
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This is a display/settings change
+        - label: This touches the GitHub API layer
+        - label: This adds a new block or pattern
