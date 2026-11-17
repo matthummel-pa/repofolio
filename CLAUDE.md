@@ -52,3 +52,9 @@ Colorful "language‑bar" identity. Palette: iris `#6C4CF1`, pink `#FF4D9D`, cor
 ## How this project was built
 
 See `docs/PROMPTS.md` for the full chronological prompt history that produced Repofolio — useful for understanding intent and for continuing the same working style.
+
+## Cursor Cloud specific instructions
+
+Standards come from the Cursor playbook plugin (matthummel-pa/ai-dev-standards-playbook). Do not copy those rules into this repo. When a playbook rule and a project rule disagree, follow this file.
+
+The Build runs the playbook `cloud-install.sh` (PHP, Composer, WP-CLI). This plugin has no Composer or npm install. Do not install WordPress unless the task asks. The facts above stay in force.
